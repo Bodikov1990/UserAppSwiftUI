@@ -10,16 +10,26 @@ import SwiftUI
 struct RegisterView: View {
     @EnvironmentObject var user: UserManager
     @State private var name = ""
+    private var minCharachter = 4
     
     var body: some View {
         VStack {
+            HStack{
             TextField("Enter your name...", text: $name)
                 .multilineTextAlignment(.center)
+                .frame(width: 250, height: 50)
+                .textFieldStyle(.roundedBorder)
+                Spacer()
+                Text("\(name.count)")
+                    .foregroundColor(name.count < minCharachter ? .red : .green)
+            }
+            .padding(.horizontal)
             Button(action: registerUser) {
                 HStack {
                     Image(systemName: "checkmark.circle")
                     Text("Ok")
                 }
+                .disabled(name.count < minCharachter)
             }
         }
     }
@@ -27,18 +37,14 @@ struct RegisterView: View {
 
 extension RegisterView {
     private func registerUser() {
-        validating()
-        if !name.isEmpty {
+        if !name.isEmpty && minCharachter <= name.count {
             user.name = name
             user.isRegister.toggle()
         }
     }
     
-    private func validating() {
-        if name.count < 4 {
-            print("Ooops")
-        }
-    }
+ 
+
 }
 
 struct RegisterView_Previews: PreviewProvider {
