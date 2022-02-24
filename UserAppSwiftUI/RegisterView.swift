@@ -52,7 +52,7 @@ struct UserTFView: View {
     var body: some View {
         ZStack {
             TextField("Enter your name...", text: $name)
-                .multilineTextAlignment(.center)
+                .multilineTextAlignment(.leading)
             HStack {
                 Spacer()
                 Text("\(name.count)")
