@@ -5,10 +5,20 @@
 //  Created by Kuat Bodikov on 22.02.2022.
 //
 
-import Foundation
 import Combine
 
-class UserManager: ObservableObject {
-    @Published var isRegister = false
+final class UserManager: ObservableObject {
+    
+    @Published var user = User()
+    
+    init() {}
+    
+    init(user: User) {
+        self.user = user
+    }
+}
+
+struct User: Codable {
     var name = ""
+    var isRegistered = false
 }

@@ -38,8 +38,8 @@ struct RegisterView: View {
 extension RegisterView {
     private func registerUser() {
         if !name.isEmpty && minCharachter <= name.count {
-            user.name = name
-            user.isRegister.toggle()
+            user.user.name = name
+            user.user.isRegistered.toggle()
         }
     }
     

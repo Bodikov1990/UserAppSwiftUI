@@ -12,10 +12,10 @@
 		121944A127C4C6270009780E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 121944A027C4C6270009780E /* Assets.xcassets */; };
 		121944A427C4C6270009780E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 121944A327C4C6270009780E /* Preview Assets.xcassets */; };
 		121944AB27C4D1530009780E /* TimeCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121944AA27C4D1530009780E /* TimeCounter.swift */; };
-		1254C5E527C54BF6004631F6 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1254C5E427C54BF6004631F6 /* ButtonView.swift */; };
 		1254C5E727C550FE004631F6 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1254C5E627C550FE004631F6 /* RegisterView.swift */; };
 		1254C5E927C5512E004631F6 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1254C5E827C5512E004631F6 /* UserManager.swift */; };
 		1254C5EB27C5518B004631F6 /* StarterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1254C5EA27C5518B004631F6 /* StarterView.swift */; };
+		12E3A89A27C661C000C97030 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E3A89927C661C000C97030 /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,10 +25,10 @@
 		121944A027C4C6270009780E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		121944A327C4C6270009780E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		121944AA27C4D1530009780E /* TimeCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCounter.swift; sourceTree = "<group>"; };
-		1254C5E427C54BF6004631F6 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		1254C5E627C550FE004631F6 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		1254C5E827C5512E004631F6 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		1254C5EA27C5518B004631F6 /* StarterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterView.swift; sourceTree = "<group>"; };
+		12E3A89927C661C000C97030 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,12 +62,12 @@
 			isa = PBXGroup;
 			children = (
 				1219449C27C4C6250009780E /* UserAppSwiftUIApp.swift */,
-				1219449E27C4C6250009780E /* ContentView.swift */,
-				1254C5E427C54BF6004631F6 /* ButtonView.swift */,
-				121944AA27C4D1530009780E /* TimeCounter.swift */,
-				1254C5E827C5512E004631F6 /* UserManager.swift */,
 				1254C5EA27C5518B004631F6 /* StarterView.swift */,
 				1254C5E627C550FE004631F6 /* RegisterView.swift */,
+				121944AA27C4D1530009780E /* TimeCounter.swift */,
+				1219449E27C4C6250009780E /* ContentView.swift */,
+				12E3A89927C661C000C97030 /* DataManager.swift */,
+				1254C5E827C5512E004631F6 /* UserManager.swift */,
 				121944A027C4C6270009780E /* Assets.xcassets */,
 				121944A227C4C6270009780E /* Preview Content */,
 			);
@@ -153,11 +153,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1254C5EB27C5518B004631F6 /* StarterView.swift in Sources */,
+				12E3A89A27C661C000C97030 /* DataManager.swift in Sources */,
 				1254C5E927C5512E004631F6 /* UserManager.swift in Sources */,
 				121944AB27C4D1530009780E /* TimeCounter.swift in Sources */,
 				1254C5E727C550FE004631F6 /* RegisterView.swift in Sources */,
 				1219449F27C4C6250009780E /* ContentView.swift in Sources */,
-				1254C5E527C54BF6004631F6 /* ButtonView.swift in Sources */,
 				1219449D27C4C6250009780E /* UserAppSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
