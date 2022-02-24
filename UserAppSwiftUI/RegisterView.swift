@@ -14,41 +14,60 @@ struct RegisterView: View {
     
     var body: some View {
         VStack {
-            HStack{
-            TextField("Enter your name...", text: $name)
-                .multilineTextAlignment(.center)
-                .frame(width: 250, height: 50)
-                .textFieldStyle(.roundedBorder)
-                Spacer()
-                Text("\(name.count)")
-                    .foregroundColor(name.count < minCharachter ? .red : .green)
-            }
-            .padding(.horizontal)
-            Button(action: registerUser) {
-                HStack {
-                    Image(systemName: "checkmark.circle")
-                    Text("Ok")
+            Form {
+                HStack{
+                    UserTFView(name: $user.user.name, validating: user.validating)
                 }
-                .disabled(name.count < minCharachter)
+                
+                Button(action: registerUser) {
+                    
+                    HStack {
+                        
+                        Image(systemName: "checkmark.circle")
+                        Text("Ok")
+                    }
+                    .disabled(!user.validating)
+                }
             }
+            
         }
     }
 }
 
 extension RegisterView {
     private func registerUser() {
-        if !name.isEmpty && minCharachter <= name.count {
-            user.user.name = name
+        if !user.user.name.isEmpty{
             user.user.isRegistered.toggle()
+            DataManager.shared.save(user: user.user)
         }
     }
-    
- 
+}
 
+
+struct UserTFView: View {
+    
+    @Binding var name: String
+    var validating = false
+    
+    var body: some View {
+        ZStack {
+            TextField("Enter your name...", text: $name)
+                .multilineTextAlignment(.center)
+            HStack {
+                Spacer()
+                Text("\(name.count)")
+                    .font(.callout)
+                    .foregroundColor(validating ? .green : .red)
+                    .padding([.top, .trailing])
+            }
+            .padding(.bottom)
+        }
+    }
 }
 
 struct RegisterView_Previews: PreviewProvider {
     static var previews: some View {
         RegisterView()
+            .environmentObject(UserManager())
     }
 }
