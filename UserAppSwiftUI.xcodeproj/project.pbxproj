@@ -15,6 +15,7 @@
 		1254C5E727C550FE004631F6 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1254C5E627C550FE004631F6 /* RegisterView.swift */; };
 		1254C5E927C5512E004631F6 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1254C5E827C5512E004631F6 /* UserManager.swift */; };
 		1254C5EB27C5518B004631F6 /* StarterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1254C5EA27C5518B004631F6 /* StarterView.swift */; };
+		128A1FBC27C817B500127D0C /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128A1FBB27C817B500127D0C /* ButtonView.swift */; };
 		12E3A89A27C661C000C97030 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E3A89927C661C000C97030 /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 		1254C5E627C550FE004631F6 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		1254C5E827C5512E004631F6 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		1254C5EA27C5518B004631F6 /* StarterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterView.swift; sourceTree = "<group>"; };
+		128A1FBB27C817B500127D0C /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		12E3A89927C661C000C97030 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,6 +66,7 @@
 				1219449C27C4C6250009780E /* UserAppSwiftUIApp.swift */,
 				1254C5EA27C5518B004631F6 /* StarterView.swift */,
 				1254C5E627C550FE004631F6 /* RegisterView.swift */,
+				128A1FBB27C817B500127D0C /* ButtonView.swift */,
 				121944AA27C4D1530009780E /* TimeCounter.swift */,
 				1219449E27C4C6250009780E /* ContentView.swift */,
 				12E3A89927C661C000C97030 /* DataManager.swift */,
@@ -154,6 +157,7 @@
 			files = (
 				1254C5EB27C5518B004631F6 /* StarterView.swift in Sources */,
 				12E3A89A27C661C000C97030 /* DataManager.swift in Sources */,
+				128A1FBC27C817B500127D0C /* ButtonView.swift in Sources */,
 				1254C5E927C5512E004631F6 /* UserManager.swift in Sources */,
 				121944AB27C4D1530009780E /* TimeCounter.swift in Sources */,
 				1254C5E727C550FE004631F6 /* RegisterView.swift in Sources */,
